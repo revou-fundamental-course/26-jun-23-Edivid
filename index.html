@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Groceries Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>E-Groceries</h1>
+        </div>
+        <ul class="menu">
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#packages">Our Packages</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="banner">
+      <div class="tagline">
+        <h2>Welcome to E-Groceries</h2>
+        <p>Your one-stop shop for fresh groceries delivered to your doorstep.</p>
+      </div>
+      <div class="banner-image">
+        <img src="img/e_grosier.jpg" alt="Banner Image" />
+      </div>
+      <div class="banner-form">
+        <h3>Get Started</h3>
+        <form id="bannerForm" onsubmit="submitBannerForm(event)">
+          <input type="text" id="bannerName" name="name" placeholder="Name" required />
+          <input type="email" id="bannerEmail" name="email" placeholder="Email" required />
+          <input type="tel" id="bannerPhone" name="phone" placeholder="Phone" required />
+          <textarea id="bannerMessage" name="message" placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="packages">
+      <h2>Our Package</h2>
+      <div id="packages">
+        <h2>Our Packages</h2>
+        <div class="package-grid">
+          <div class="package-column">
+            <h3>Package 1</h3>
+            <p>Description of Package 1</p>
+          </div>
+          <div class="package-column">
+            <h3>Package 2</h3>
+            <p>Description of Package 2</p>
+          </div>
+          <div class="package-column">
+            <h3>Package 3</h3>
+            <p>Description of Package 3</p>
+          </div>
+          <div class="package-column">
+            <h3>Package 4</h3>
+            <p>Description of Package 4</p>
+          </div>
+          <div class="package-column">
+            <h3>Package 5</h3>
+            <p>Description of Package 5</p>
+          </div>
+          <div class="package-column">
+            <h3>Package 6</h3>
+            <p>Description of Package 6</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you. Fill out the form below and we'll get back to you shortly.</p>
+      <button id="closingArgumentBtn" onclick="scrollToBannerForm()">Contact Us</button>
+    </section>
+
+    <script>
+      // JavaScript code for banner auto slide
+      // ...
+
+      // JavaScript code for form validation
+      function validateForm(event) {
+        event.preventDefault();
+        // Add your form validation logic here
+      }
+    </script>
+
+    <!-- my js -->
+    <script src="js/script.js"></script>
+  </body>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Windy. All rights reserved.</p>
+    </div>
+  </footer>
+</html>

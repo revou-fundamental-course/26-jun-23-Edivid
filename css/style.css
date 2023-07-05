@@ -1,0 +1,277 @@
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ff5500;
+}
+
+/* Navigasi Desktop */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Navigasi Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+#banner {
+  background-color: #f0f0f0;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.tagline {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tagline h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.tagline p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.banner-image {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-form {
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.banner-form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.banner-form input,
+.banner-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.banner-form button {
+  padding: 10px 20px;
+  background-color: #ff5500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.banner-form button:hover {
+  background-color: #e44d00;
+}
+
+@media (max-width: 768px) {
+  .banner-image,
+  .banner-form {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .banner-image img {
+    max-width: 80%;
+  }
+}
+
+#packages {
+  padding: 40px;
+}
+
+#packages h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.package-column {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.package-column h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.package-column p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#contact {
+  padding: 40px;
+  text-align: center; /* Menengahkan konten */
+}
+
+#contact h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: inline-block; /* Menggunakan inline-block untuk mengatur konten di tengah */
+  text-align: left; /* Mengembalikan perataan konten form menjadi kiri */
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contact-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form .form-group button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .contact-form .form-group {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+}
